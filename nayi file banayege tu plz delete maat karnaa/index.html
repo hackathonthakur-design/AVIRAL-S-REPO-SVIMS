@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        /* Page */
+        body {
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            107deg,
+            rgba(199, 216, 213, 0.75),
+            rgba(126, 140, 210, 0.75)
+        ),
+        url("EeqmlVzcICcvSLr3-k4OVBjUBlJDc4n95HAS4FRV5eA&s");
+
+    background-size: 400% 400%, cover;
+    background-position: 0% 50%, center;
+    background-repeat: no-repeat;
+
+    animation: gradientMove 8s ease infinite;
+
+    margin: 0;
+    padding: 50px;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%, center;
+    }
+
+    50% {
+        background-position: 100% 50%, center;
+    }
+
+    100% {
+        background-position: 0% 50%, center;
+    }
+}
+
+
+        /* Outer box */
+        .outer-box {
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    background-color: rgb(65 5 5 / 25%);
+    box-shadow: 0 8px 25px rgb(133 12 12 / 25%);
+        }
+
+        /* Registration heading */
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* Inner form box */
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Form fields */
+        form div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #4a90e2;
+            outline: none;
+            box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+        }
+
+        /* Buttons */
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-right: 8px;
+        }
+
+        button[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<nav class="navbar">
+  <div class="logo">MyProject</div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button class="menu-btn">☰</button>
+</nav>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    height: 65px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111827;
+    color: white;
+  }
+
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .nav-links a:hover {
+    color: #60a5fa;
+  }
+
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+  }
+
+  @media (max-width: 600px) {
+    .nav-links {
+      display: none;
+    }
+
+    .menu-btn {
+      display: block;
+    }
+  }
+</style>
+<body>
+
+    <div class="outer-box">
+
+        <h1>Registration</h1>
+
+        <form>
+
+            <div>
+                <label for="name">Name:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Enter your name"
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="course">Course:</label>
+                <input 
+                    type="text" 
+                    id="course" 
+                    name="course" 
+                    placeholder="Enter your course"
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Mail ID:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your Mail ID"
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password">Password:</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Enter your password"
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="confirm-password">Confirm Password:</label>
+                <input 
+                    type="password" 
+                    id="confirm-password" 
+                    name="confirm-password" 
+                    placeholder="Enter your password again"
+                >
+            </div>
+
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
